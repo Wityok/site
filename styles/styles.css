@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    font-family: 'Century Gothic';
+    background-color: blueviolet;
+    font-size: 50px
+}
+
+li {
+    margin-bottom: 1ch;
+}
+
+.size {
+    width: 200px;
+    height: 200px;
+}
+
+.photo {
+    display: flex;
+    background-color: blueviolet;;
+}
+
+.name {
+    text-align: center;
+}
+
+.line {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab {
+    text-align: center;
+    font-size: 30px
+}
+
+ol {
+	margin: 0;
+	max-width: 700px;
+	position: relative;
+}
+
+
+li {
+	padding: 0.5rem 1.5rem 1rem;
+	border-radius: 1.5rem;
+	background: blueviolet;
+}
+
+
+::marker {
+	font-weight: 600;
+	color: tomato;
+	font-size: 1.8rem;
+}
