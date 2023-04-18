@@ -1,12 +1,31 @@
+body{
+    margin: 0;
+}
+
 h1 {
-    text-align: center;
+    margin: 20px 0;
     font-family: 'Century Gothic';
     background-color: blueviolet;
-    font-size: 50px
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.end {
+    text-align: center;
+    margin: 20px 0;
 }
 
 li {
     margin-bottom: 1ch;
+}
+
+ul{
+    margin: 0;
+}
+
+.parent{
+    display: flex;
+    padding: 5px;
 }
 
 .size {
@@ -46,7 +65,7 @@ ol {
 }
 
 
-li {
+.list li {
 	padding: 0.5rem 1.5rem 1rem;
 	border-radius: 1.5rem;
 	background: blueviolet;
@@ -57,4 +76,98 @@ li {
 	font-weight: 600;
 	color: tomato;
 	font-size: 1.8rem;
+}
+
+.navigation li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+    color: inherit;
+    margin: 0;
+    line-height: 50px;
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 0;
+    padding: 10px 10px;
+
+}
+
+.navigation{
+    padding: 0;
+    flex-grow: 1;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.links{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.navigation :hover{
+    color: white;
+}
+
+.navigation .links,
+.navigation .links::after,
+.navigation .links::before {
+    transition: all .7s;
+}
+
+.navigation .links::after{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: blueviolet;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navigation .links:hover::after{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+
+.contact{
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.mail::after{
+content: " - gandzukwitya2@gmail.com";
+}
+
+.phone-number::after{
+    content: " - +380964537521";
+}
+
+.info li{
+    padding: 0.5rem 1.5rem 1rem;
+	border-radius: 1.5rem;
+	background: blueviolet;
+    max-width: 700px;
+}
+
+.info-div{
+    margin: 50px 0;
 }
