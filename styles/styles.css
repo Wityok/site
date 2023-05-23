@@ -33,9 +33,10 @@ ul{
     height: 200px;
 }
 
-.photo {
+#photo {
     display: flex;
-    background-color: blueviolet;;
+    background-color: blueviolet;
+  
 }
 
 .name {
@@ -171,3 +172,7 @@ content: " - gandzukwitya2@gmail.com";
 .info-div{
     margin: 50px 0;
 }
+
+
+  
+  
